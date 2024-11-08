@@ -1,7 +1,7 @@
 // program to find countries in Pete's World
 // date November 2022
 // author Pete Lowe
-// add your name here
+// Cormac Bowes
 //  or here
 // estimated time 120 minutes
 // actual time ??
@@ -22,65 +22,38 @@ int main()
 		std::cout << "You need to select a number between 1 and 5" << std::endl;
 		return 0;
 	}
-	std::cout << "Pick a letter from A to A or Z to Z" << std::endl; // change this line each iteration
+	std::cout << "Pick a letter from B to B or Y to Y" << std::endl; // change this line each iteration
 	std::cin >> letter;
-	if (letter < 'A' || letter > 'Z') // not a capital letter
+	if (letter < 'B' || letter > 'Y') // not a capital letter
 	{ 
-		if (letter < 'a' || letter > 'z') // not a lower case letter
+		if (letter < 'b' || letter > 'y') // not a lower case letter
 		{
 			std::cout << "You need to select a letter from A to Z" << std::endl;
 			return 0; 
 		}		
 	}
-	if (letter == 'a' || letter == 'A') // written by Pete
+	if (letter == 'b' || letter == 'B') 
 	{
 		if (region == 1)
 		{
-			std::cout << "Argentina" << std::endl;
+			std::cout << "Bahamas, Barbados, Belize, Bermuda, Bolivia, Brazil" << std::endl;
 		}
 		if (region == 2)
 		{
-			std::cout << "Albania, Austria" << std::endl;
+			std::cout << "Belarus, Belgium, Bosnia and Herzegovina, Bulgaria" << std::endl;
 		}
 		if (region == 3)
 		{
-			std::cout << "Algeria, Angola" << std::endl;
+			std::cout << "Benin, Botswana, Burkina Faso, Burundi" << std::endl;
 		}
 		if (region == 4)
 		{
-			std::cout << "Afghanistan, Armenia, Azerbaijan" << std::endl;
+			std::cout << "Bangladesh, Bhutan, Brunei Darussalam" << std::endl;
 		}
 		if (region == 5)
 		{
-			std::cout << "Australia, Antarctica, Aruba, Anguilla Leeward Islands, Antigua and Barbuda, American Samoa" << std::endl;
+			std::cout << "BahrainArabian Peninsula," << std::endl;
 		}
-	}	
-	if (letter == 'z' || letter == 'Z') // written by Pete
-	{
-		if (region == 1)
-		{
-			std::cout << "There are no Zs in the Americas" << std::endl; // default negative response
-		}
-		if (region == 2)
-		{
-			std::cout << "There are no Zs in Europe" << std::endl;
-		}
-		if (region == 3)
-		{
-			std::cout << "Zimbabwe, Zambia" << std::endl;
-		}
-		if (region == 4)
-		{
-			std::cout << "There are no Zs in Aisa" << std::endl;
-		}
-		if (region == 5)
-		{
-			std::cout << "There are no Zs in rest of the world" << std::endl;
-		}
-
-	}
-	
-	
-	
+	}		
 	return 1;
 }
